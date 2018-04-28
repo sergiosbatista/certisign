@@ -1,0 +1,393 @@
+﻿<!doctype html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Language" content="pt-br, en, fr, it">
+
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content=""/>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+   
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+	
+	<title>Prova Front-end</title>
+	
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.min.css" type="text/css" />
+	
+</head>
+
+<body>
+	
+	<!-- navegação -->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-white py-3">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div style="color:#000; font-size:1em;" class="d-none d-sm-block d-md-none d-block d-sm-none d-none d-md-block d-lg-none">
+					<span id="name-mobile"></span><a class="nav-link" href="#" id="login-mobile"></a>
+				</div>
+				<div class="collapse navbar-collapse animated fadeInDown" id="navbarsExample08">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Produtos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Quem Somos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contato</a>
+						</li>
+					</ul>
+					
+					<ul class="navbar-nav ml-auto" id="logoff">
+						<li class="nav-item">
+							<span id="name">Olá, Nome</span>
+							<a class="nav-link" href="#" id="login">Logoff</a>
+						</li>
+					</ul>
+                
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+	<!-- slide -->
+	<section id="slider">
+		<div class="container-fluid col-md-10 col-offset-1" id="slide">
+			<div id="carouselLogo" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+						<img class="d-block img-fluid" src="img/slide.jpg" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block img-fluid" src="img/slide.jpg" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block img-fluid" src="img/slide.jpg" alt="First slide">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselLogo" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselLogo" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+    	</div>
+	</section>
+		
+	<!-- Filtro -->
+	<section id="filtro">
+		<div class="container-fluid col-md-10 col-offset-1">
+			<div class="row animated fadeIn">
+
+				<div class="col-md-1 line">
+					<img src="img/filtro/eletro.svg" class="img-fluid">
+					<span>Eletro</span>
+				</div>
+				<div class="col-md-1 line">
+					<img src="img/filtro/presente.svg" class="img-fluid">
+					<span>Presente</span>
+				</div>
+				<div class="col-md-1 line">
+					<img src="img/filtro/moda.svg" class="img-fluid">
+					<span>Moda</span>
+				</div>
+				<div class="col-md-1 line">
+					<img src="img/filtro/esporte.svg" class="img-fluid">
+					<span>Esporte</span>
+				</div>
+				<div class="col-md-1 line">
+					<img src="img/filtro/saude.svg" class="img-fluid">
+					<span>Saúde</span>
+				</div>
+				<div class="col-md-1 line">
+					<img src="img/filtro/beleza.svg" class="img-fluid">
+					<span>Beleza</span>
+				</div>
+				<div class="col-md-1 line">
+					<img src="img/filtro/gastro.svg" class="img-fluid">
+					<span>Gastronomia</span>
+				</div>
+				<div class="col-md-1 line">
+					<img src="img/filtro/decor.svg" class="img-fluid">
+					<span>Decoração</span>
+				</div>
+				<div class="col-md-1 line">
+					<img src="img/filtro/cultura.svg" class="img-fluid">
+					<span>Cultura</span>
+				</div>
+				<div class="col-md-1 mt-1 outros">
+					<img src="img/filtro/outros.svg" class="img-fluid">
+					<span>Outros</span>
+				</div>
+				<div class="col-lg-2 col-md-8 lookingFor">	
+					<div class="ls-custom-select">
+						<select class="ls-select">
+							<option value="1"> Mais Procurados </option>
+							<option value="2"> Eletro </option>
+							<option value="3"> Presente </option>
+							<option value="4"> Moda </option>
+							<option value="2"> Esporte </option>
+							<option value="3"> Saúde </option>
+							<option value="4"> Beleza </option>
+							<option value="2"> Gastronomia </option>
+							<option value="3"> Decoração </option>
+							<option value="4"> Cultura </option>
+						</select>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	
+	<!-- vitrine -->
+	<section id="showcase">	
+		<div class="container col-md-10 col-offset-1">
+			<ul>
+				<li>
+					<div href="#" class="item animated fadeIn">
+						<div class="over">
+							<img src="img/vitrine/lorem_ipsum.jpg" alt="" width="100%">
+							<div class="post-s">
+								<span class="titlePro">Lorem Ipsum</span><br/>10% de desconto<br/>
+								<a class="clicked" href="#" data-toggle="modal" data-target="#largeModal">saiba mais</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div href="#" class="item animated fadeIn">
+						<div class="over">
+							<img src="img/vitrine/auctor_arcu.jpg" alt="" width="100%">
+							<div class="post-s">
+								<span class="titlePro">Lorem Ipsum</span><br/>10% de desconto<br/>
+								<a class="clicked" href="#" data-toggle="modal" data-target="#largeModal">saiba mais</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div href="#" class="item animated fadeIn">
+						<div class="over">
+							<img src="img/vitrine/mauris_porttitor.jpg" alt="" width="100%">
+							<div class="post-s">
+								<span class="titlePro">Lorem Ipsum</span><br/>10% de desconto<br/>
+								<a class="clicked" href="#" data-toggle="modal" data-target="#largeModal">saiba mais</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div href="#" class="item animated fadeIn">
+						<div class="over">
+							<img src="img/vitrine/orci_varius.jpg" alt="" width="100%">
+							<div class="post-s">
+								<span class="titlePro">Lorem Ipsum</span><br/>10% de desconto<br/>
+								<a class="clicked" href="#" data-toggle="modal" data-target="#largeModal">saiba mais</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div href="#" class="item animated fadeIn">
+						<div class="over">
+							<img src="img/vitrine/morbi_pharetra.jpg" alt="" width="100%">
+							<div class="post-s">
+								<span class="titlePro">Lorem Ipsum</span><br/>10% de desconto<br/>
+								<a class="clicked" href="#" data-toggle="modal" data-target="#largeModal">saiba mais</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div href="#" class="item animated fadeIn">
+						<div class="over">
+							<img src="img/vitrine/vestibulum_lectus.jpg" alt="" width="100%">
+							<div class="post-s">
+								<span class="titlePro">Lorem Ipsum</span><br/>10% de desconto<br/>
+								<a class="clicked" href="#" data-toggle="modal" data-target="#largeModal">saiba mais</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div href="#" class="item animated fadeIn">
+						<div class="over">
+							<img src="img/vitrine/sagittis_feugiat.jpg" alt="" width="100%">
+							<div class="post-s">
+								<span class="titlePro">Lorem Ipsum</span><br/>10% de desconto<br/>
+								<a class="clicked" href="#" data-toggle="modal" data-target="#largeModal">saiba mais</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div href="#" class="item animated fadeIn">
+						<div class="over">
+							<img src="img/vitrine/cras_pulvina.jpg" alt="" width="100%">
+							<div class="post-s">
+								<span class="titlePro">Lorem Ipsum</span><br/>10% de desconto<br/>
+								<a class="clicked" href="#" data-toggle="modal" data-target="#largeModal">saiba mais</a>
+							</div>
+						</div>	
+					</div>
+				</li>
+				<li>
+					<div href="#" class="item animated fadeIn">
+						<div class="over">
+							<img src="img/vitrine/aenean_massa.jpg" alt="" width="100%">
+							<div class="post-s">
+								<span class="titlePro">Lorem Ipsum</span><br/>10% de desconto<br/>
+								<a class="clicked" href="#" data-toggle="modal" data-target="#largeModal">saiba mais</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div href="#" class="item animated fadeIn">
+						<div class="over">
+							<img src="img/vitrine/ex_magna.jpg" alt="" width="100%">
+							<div class="post-s">
+								<span class="titlePro">Lorem Ipsum</span><br/>10% de desconto<br/>
+								<a class="clicked" href="#" data-toggle="modal" data-target="#largeModal">saiba mais</a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content" id="modal">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="close">×</button>
+		  		<div class="modal-body">
+					<div class="row">
+						<div class="col-md-3 dates">
+							<img src="img/cam.png" class="img-fluid cam mb-3">
+							<div class="media">
+								<div class="media-left media-middle" href="#">
+									<img src="img/coupon.png">
+								</div>
+								<div class="media-body" id="media-coupon">
+									<span class="coupon">Cupom -</span> <span class="couponNumber">DSC2015</span><br/>
+									<p>(insira o cupom de desconto  no carrinho)</p>
+								</div>
+							</div>
+							<div class="media">
+								<div class="media-left media-middle" href="#">
+									<img src="img/percent.png">
+								</div>
+								<div class="media-body">
+									<span class="coupon">10% de desconto em todo site</span>
+								</div>
+							</div>
+							<button type="button" class="btn btn-acess mt-3">Acesse agora e aproveite!</button>
+						</div>
+						<div class="col-md-9 textModal">
+							<h3 class="mb-4">Lorem Ipsum</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna libero, maximus eu sodales ut, porta non felis. Proin sit amet semper orci, at porttitor nunc. Pellentesque id neque pulvinar, faucibus nunc quis, tincidunt lacus. Quisque ac libero at ex hendrerit sollicitudin ac eu ex. Suspendisse ultricies condimentum lacus. Phasellus ultricies magna ac ex ornare.</p>
+							<p>Etiam lacinia lacinia condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In sed mauris et dui posuere faucibus sed viverra massa.</p>
+							<p><span class="detals">Telefone:</span> (11) 99999-9999<br/>
+							<span class="detals">E-mail:</span> email@email.com</p>
+							<span class="attention">Nullam fermentum auctor arcu, a convallis massa eleifend iaculis. Fusce orci erat, elementum vitae urna vitae, vehicula tincidunt velit. Mauris id hendrerit justo. Etiam a consectetur lorem. Vestibulum vulputate.</span>
+						</div>
+					</div>
+		  		</div>
+			</div>
+	  	</div>
+	</div>
+	
+	<!-- quem somos -->
+	<section id="hoWeAre">
+		<div class="container-fluid col-md-10 col-offset-1 weAre">
+			<div class="row">
+				
+				<div class="col-md-8 wow fadeIn" id="destak">
+					<h2>Quem somos</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae finibus tortor. Fusce eu tempus nulla. Duis blandit auctor ex, a lacinia erat porttitor non. Sed tempus tincidunt diam non pharetra. Sed sodales porta felis nec hendrerit. Morbi vulputate ligula a dolor scelerisque semper.</p>
+					<p>Praesent pulvinar velit nec ligula auctor pharetra. Aenean non egestas purus, at consequat nulla. Aenean molestie nisl ex.</p>
+					
+					<div class="pl-4 pt-2 detalsWe">
+						<div class="media">
+							<div class="media-left media-middle" href="#">
+								<img src="img/1.svg">
+							</div>
+							<div class="media-body">
+								<p><strong>Sed vel fringilla libero,</strong> blandit facilisis enim lotus;</p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left media-middle" href="#">
+								<img src="img/2.svg">
+							</div>
+							<div class="media-body">
+								<p>Maecenas ut vehicula leo. Proin non lacinia nunc;</p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left media-middle" href="#">
+								<img src="img/3.svg">
+							</div>
+							<div class="media-body">
+								<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong> Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus;</p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left media-middle" href="#">
+								<img src="img/4.svg">
+							</div>
+							<div class="media-body">
+								<p>Nullam porta, ex commodo tincidunt imperdiet, massa urna malesuada eros, quis aliquet <strong>lacus quam id dolor.</strong></p>
+							</div>
+						</div>
+			  		</div>
+				</div>
+				
+				<div class="col-md-4 d-none d-lg-block d-xl-none d-none d-xl-block wow fadeIn">
+					<img src="img/quem_somos.png" alt="">
+				</div>
+			
+			</div>
+		</div>
+	</section>
+	
+	<!-- footer -->
+	<footer class="py-4">
+		<div class="container-fluid col-md-10 col-offset-1">
+			<div class="media wow fadeIn">
+				<div class="media-left media-middle call_to_us" href="#">
+					<img src="img/contact.svg" alt="">
+				</div>
+				<div class="media-body contactFooter">
+					<p>Caso tenha dúvidas, <a href="#">entre em contato conosco</a>.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow-1.1.2.min.js"></script>
+	<script src="js/script.js"></script>
+	
+</body>
+</html>
